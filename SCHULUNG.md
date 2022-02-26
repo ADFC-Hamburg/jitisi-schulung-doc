@@ -21,7 +21,7 @@
 
 ```
 # ggf in ein Verzeichnis wechseln wo das Repo später liegen soll, bei mir /home/sven/src
-pip install ansible ansible-lint
+pip3 install ansible ansible-lint
 git clone git@github.com:ADFC-Hamburg/adfc-ansible.git
 
 cd adfc-ansible
