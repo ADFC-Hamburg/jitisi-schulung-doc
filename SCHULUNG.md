@@ -9,6 +9,14 @@
 * Hetzner Cloud Account anlegen 
 * Github Einladung bestätigen
 * Sich zu Github, Hetzner einladen lassen und SSH Key  hinterlegen lassen
+* Python3 installieren
+* Entwicklungsumgebung installieren (z.B. https://code.visualstudio.com/ oder https://www.vim.org/)
+  ggf. Module für
+  * YAML, 
+  * Syntaxhighlight
+  * Trailing Spaces remove
+  * Tab to Spaces
+  * Git
 
 ```
 # ggf in ein Verzeichnis wechseln wo das Repo später liegen soll, bei mir /home/sven/src
