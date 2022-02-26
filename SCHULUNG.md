@@ -39,11 +39,11 @@ ansible-galaxy install -r requirements.yml
 
 ## Nützliche Playbooks
 
-setup-ssh.yml
-setup-meet-vb-for-test.yml
-setup-meet-vb.yml
-delete-meet-vb.yml
-update-os.yml
+* setup-ssh.yml
+* setup-meet-vb-for-test.yml
+* setup-meet-vb.yml
+* delete-meet-vb.yml
+* update-os.yml
 
 ## Neue Test Maschine anlegen:
 
