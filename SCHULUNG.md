@@ -13,6 +13,7 @@
 * Entwicklungsumgebung installieren (z.B. https://code.visualstudio.com/ oder https://www.vim.org/)
   ggf. Module für
   * YAML, 
+  * Ansible
   * Syntaxhighlight
   * Trailing Spaces remove
   * Tab to Spaces
