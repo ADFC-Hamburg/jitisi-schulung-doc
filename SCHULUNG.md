@@ -42,6 +42,7 @@ setup-ssh.yml
 setup-meet-vb-for-test.yml
 setup-meet-vb.yml
 delete-meet-vb.yml
+update-os.yml
 
 # Neue Test Maschine anlegen:
 
@@ -87,6 +88,7 @@ Ist ein Skript wass regelmäßig ausgeführt wird
 Logfile
 journalctl -u djs.service  --since -1h
 
+```
 # ggf. mal anhalten:
 systemctl stop djs.timer 
 # Auch bei systemstart
@@ -100,6 +102,12 @@ systemctl enable djs.timer
 # Das Skript einmalig starten:
 systemctl start djs.timer
 
+# Wie ist der Service / Timer genau definiert
+systemctl cat djs.service
+systemctl cat djs.timer
+# Status
+systemctl status djs.timer
+```
 
 
 # Logfiles und Config Files
