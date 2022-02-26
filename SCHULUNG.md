@@ -1,13 +1,14 @@
-Einführung Jitsi Meet 
+# Einführung Jitsi Meet 
 
 
-# Vorbereitungen:
+## Vorbereitungen:
 
-* Github Account anlegen und sich einladen lassen
+* Github Account anlegen 
 * SSH Key erstellen
 * SSH Key bei Github hinterlegen
-* Hetzner Cloud Account anlegen und sich einladen lassen
+* Hetzner Cloud Account anlegen 
 * Github Einladung bestätigen
+* Sich zu Github, Hetzner einladen lassen und SSH Key  hinterlegen lassen
 
 ```
 # ggf in ein Verzeichnis wechseln wo das Repo später liegen soll, bei mir /home/sven/src
@@ -19,7 +20,7 @@ ansible-galaxy install -r requirements.yml
 ```
 
 
-# Einführung
+## Einführung
 
 
 Überblick über die Maschienen für Jitsi
@@ -29,14 +30,14 @@ ansible-galaxy install -r requirements.yml
 * meet.adfc-intern.de
 * vbdh01.meet.adfc-intern.de bis vbdh04.meet.adfc-intern.de
 
-# Struktur Ansible
+## Struktur Ansible
 
 * Inventory / Hostvars / Groupvars
 `ansible-inventory -y --host proxmox01.adfc-intern.de`
 * Playboooks
 * Rollen
 
-# Nützliche Playbooks
+## Nützliche Playbooks
 
 setup-ssh.yml
 setup-meet-vb-for-test.yml
@@ -44,14 +45,14 @@ setup-meet-vb.yml
 delete-meet-vb.yml
 update-os.yml
 
-# Neue Test Maschine anlegen:
+## Neue Test Maschine anlegen:
 
 * In die inventory.yml aufnehmen
 * Hostvars setzen
 * Playbook aufrufen
 * Rechner erreichen
 
-# Pull Requests für Anfänger
+## Pull Requests für Anfänger
 
 ```
 cd src/adfc-ansible
@@ -79,13 +80,13 @@ git pull origin master
 git branch -d mein-neues-feature
 ```
 
-# Dynamic Jitsi Scaler
+## Dynamic Jitsi Scaler
 
-Proxmox01
+### Proxmox01
 Ist ein Skript wass regelmäßig ausgeführt wird
 /usr/local/bin/dynamic-jitsi-scaler
 
-Logfile
+### Logfile
 journalctl -u djs.service  --since -1h
 
 ```
@@ -110,13 +111,13 @@ systemctl status djs.timer
 ```
 
 
-# Logfiles und Config Files
+## Logfiles und Config Files
 
-/etc/jitsi
-/etc/nginx/sites-available/meet.adfc-intern.de.conf
-/etc/prosody/
-/var/log/jitsi/
-/var/log/prosody/
+* /etc/jitsi
+* /etc/nginx/sites-available/meet.adfc-intern.de.conf
+* /etc/prosody/
+* /var/log/jitsi/
+* /var/log/prosody/
 
 https://stats.adfc-intern.de
 
