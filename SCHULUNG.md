@@ -6,10 +6,10 @@
 * Github Account anlegen 
 * SSH Key erstellen
 * SSH Key bei Github hinterlegen
-* Hetzner Cloud Account anlegen 
-* Github Einladung bestätigen
-* Sich zu Github, Hetzner einladen lassen und SSH Key  hinterlegen lassen
+* Hetzner Cloud Account anlegen  https://accounts.hetzner.com/signUp
+* Sich zu Github, Hetzner einladen lassen (dazu Username/Mailaddresse mit der registriert wurde mitteilen) und SSH Key auf den Rechnern hinterlegen lassen
 * Python3 installieren
+* Github Einladung bestätigen (wenn Einladung passiert ist)
 * Entwicklungsumgebung installieren (z.B. https://code.visualstudio.com/ oder https://www.vim.org/)
   ggf. Module für
   * YAML, 
